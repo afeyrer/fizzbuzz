@@ -49,7 +49,9 @@ numbers=input("How many numbers shall we print? ")
 fizz=input("For multiples of what number shall we print 'Fizz'? ")
 buzz=input("For multiples of what number shall we print 'Buzz'? ")
 
-thing
+thing=range(1,int(numbers)+1)
+for x in thing:
+    print(x)
 
 
 
