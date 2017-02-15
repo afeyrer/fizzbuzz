@@ -49,10 +49,20 @@ numbers=int(input("How many numbers shall we print? "))
 fizz=int(input("For multiples of what number shall we print 'Fizz'? "))
 buzz=int(input("For multiples of what number shall we print 'Buzz'? "))
 f=1
+b=1
+fb=1
 thing=list(range(1,numbers+1))
 while (fizz*f)<= numbers:
-    
-
+    thing[fizz*f-1]="Fizz"
+    f=f+1
+while (buzz*b)<= numbers:
+    thing[buzz*b-1]="Buzz"
+    b=b+1
+while (fizz*buzz*fb)<= numbers:
+    thing[fizz*buzz*fb-1]="FizzBuzz"
+    fb=fb+1
+for x in thing:
+    print(x)
 
 
 
