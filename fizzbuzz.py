@@ -45,13 +45,14 @@ Fizz
 Buzz
 """
 
-numbers=input("How many numbers shall we print? ")
-fizz=input("For multiples of what number shall we print 'Fizz'? ")
-buzz=input("For multiples of what number shall we print 'Buzz'? ")
+numbers=int(input("How many numbers shall we print? "))
+fizz=int(input("For multiples of what number shall we print 'Fizz'? "))
+buzz=int(input("For multiples of what number shall we print 'Buzz'? "))
+f=1
+thing=list(range(1,numbers+1))
+while (fizz*f)<= numbers:
+    
 
-thing=range(1,int(numbers)+1)
-for x in thing:
-    print(x)
 
 
 
