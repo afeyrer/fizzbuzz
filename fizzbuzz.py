@@ -52,15 +52,14 @@ f=1
 b=1
 fb=1
 thing=list(range(1,numbers+1))
-while (fizz*f)<= numbers:
-    thing[fizz*f-1]="Fizz "
-    f=f+1
-while (buzz*b)<= numbers:
-    thing[buzz*b-1]="Buzz "
-    b=b+1
-while (fizz*buzz*fb)<= numbers:
-    thing[fizz*buzz*fb-1]="FizzBuzz "
-    fb=fb+1
+for x in thing:
+    if (x/fizz).is_integer():
+        thing[x-1]="Fizz"
+    if (x/buzz).is_integer():
+        thing[x-1]="Buzz"
+    if (x/fizz).is_integer() and (x/buzz).is_integer():
+        thing[x-1]="FizzBuzz"
+    
 for x in thing:
     print(x)
 
